@@ -68,7 +68,7 @@ function staticLoadPlaces() {
     return [
         {
             name: 'ship',
-            modelName: 'https://shimizukobo.github.io/shidenkai_salvage/assets/gun_2_FIX_2_AR.glb',
+            modelName: 'https://shimizukobo.github.io/shidenkai_body/assets/gun_2_FIX_2_AR.glb',
             location: {
                 lat: 32.94275472461306,
                 lng: 132.56692766713076,
