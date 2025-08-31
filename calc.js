@@ -70,8 +70,8 @@ function staticLoadPlaces() {
             name: 'ship',
             modelName: 'https://shimizukobo.github.io/shidenkai_body/assets/gun_2_FIX_2_AR.glb',
             location: {
-                lat: 32.94275472461306,
-                lng: 132.56692766713076,
+                lat: 32.950034,
+                lng: 132.549139,
             }
         },
 
@@ -120,7 +120,7 @@ function renderPlaces(places, pos) {
             jsonAltitude = 0;
         }
         else{
-            jsonAltitude = jsonAltitude - 33;
+            jsonAltitude = jsonAltitude - 33+140;//-33=0
 //            jsonAltitude = 250;
         }    
 alert("\nちゃんと撮れるかな ver1.0.0\n紫電改引上げを見るブラウザAR\n緯度 " + pos.coords.latitude + "\n経度 " + pos.coords.longitude + "\n標高 " + jsonAltitude + "\nボタンをタップすると撮影できます。\n\n初回の起動時には、位置情報を取得がうまくいかない場合は、\n少し時間をおいてブラウザの更新をしてください。");
