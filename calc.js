@@ -147,6 +147,7 @@ jsonAltitude = (0-jsonAltitude)*(cal.newDistance/cal.distance)+jsonAltitude;
         model.setAttribute('gltf-model', `${modelName}`);
 //        model.setAttribute('position', '0 0 -${jsonAltitude}');
         model.setAttribute('position', '0 '+jsonAltitude+' 0');
+        model.setAttribute('rotation', '0 -5 0');
         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', `${cal.objectSize}`);
 
