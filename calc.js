@@ -153,7 +153,9 @@ jsonAltitude = (0-jsonAltitude)*(cal.newDistance/cal.distance)+jsonAltitude;
         model.setAttribute('position', '0 '+jsonAltitude+' 0');
         model.setAttribute('rotation', '0 -5 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', `${cal.objectSize}`);
+        if(cal.distance >= 500){
+            model.setAttribute('scale', `${cal.objectSize}`);
+        }
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
