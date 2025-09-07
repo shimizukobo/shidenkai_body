@@ -30,14 +30,15 @@ export class CalcVR {
     // サイズを計算
     calcSizeDist(distance) {
          if(distance < 500){
-            this.objectSize = '1.0 1.0 1.0';
+            this.objectSize = '35 35 35';
+//            this.objectSize = '1.0 1.0 1.0';
             this.newDistance = distance;
 //alert("2距離 " + distance);
         }else if(distance <= 1000 && distance >= 500){
-//            this.objectSize = '25 25 25';
+            this.objectSize = '25 25 25';
 //            this.objectSize = '2.5 2.5 2.5';
 //            this.objectSize = '1.2 1.2 1.2';
-            this.objectSize = '1.0 1.0 1.0';
+//            this.objectSize = '1.0 1.0 1.0';
             this.newDistance = 800;
         }else if(distance > 1000 && distance <= 8000) {
             this.objectSize = '20 20 20';
